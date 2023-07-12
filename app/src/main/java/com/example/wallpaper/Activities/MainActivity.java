@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private void retrieveImageUrls() {
 
-
         // List all items under "images" folder
         imagesRef.listAll().addOnSuccessListener(listResult -> {
             for (StorageReference item : listResult.getItems()) {

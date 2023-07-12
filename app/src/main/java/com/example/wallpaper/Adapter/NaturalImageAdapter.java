@@ -1,6 +1,7 @@
 package com.example.wallpaper.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.wallpaper.Activities.ViewImage;
 import com.example.wallpaper.Models.NaturalImages;
 import com.example.wallpaper.R;
 
@@ -43,6 +45,9 @@ public class NaturalImageAdapter extends RecyclerView.Adapter<NaturalImageAdapte
                 .error(R.drawable.ic_launcher_background)
                 .into(holder.ivImages);
 
+        holder.ivImages.setOnClickListener(view -> {
+            context.startActivity(new Intent(context, ViewImage.class).putExtra("image",item));
+        });
     }
 
     @Override
