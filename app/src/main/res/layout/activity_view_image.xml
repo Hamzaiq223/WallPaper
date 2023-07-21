@@ -5,24 +5,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Activities.ViewImage">
 
-    <ImageView
+    <com.jsibbold.zoomage.ZoomageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/ivBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/icon_back"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
