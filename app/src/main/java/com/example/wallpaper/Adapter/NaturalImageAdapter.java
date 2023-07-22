@@ -61,7 +61,7 @@ public class NaturalImageAdapter extends RecyclerView.Adapter<NaturalImageAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-            ivImages = itemView.findViewById(R.id.ivImages);
+            ivImages = itemView.findViewById(R.id.image);
         }
     }
 

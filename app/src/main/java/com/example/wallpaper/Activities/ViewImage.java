@@ -18,7 +18,7 @@ public class ViewImage extends AppCompatActivity {
     String image;
     ImageView ivBack;
 
-    ZoomageView ivImage;
+    ImageView ivImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
